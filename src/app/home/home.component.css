@@ -1,0 +1,114 @@
+@font-face {
+  font-family: f2 ;
+  src: url(../../assets/formular-regular-trial.otf);
+}
+.homepage {
+  height: 100%;
+}
+p {
+  opacity: 1;
+}
+.slide1 {
+  font-size: 18px;
+  display: flex;
+  flex-direction: column;
+  height: 500px;
+  background-color: black;
+  color: black;
+  background-image: url('../../assets/pexels-eberhardgross-707344.jpg');
+  background-size: cover; /* Scales the image to cover the entire element */
+  background-repeat: no-repeat; /* Prevents the image from repeating */
+  background-position: center; /* Centers the image */
+
+
+}
+.slide2 {
+  font-size: 18px;
+  display: flex;
+  flex-direction: column;
+  height: 500px;
+  background-color: black;
+  color: black;
+  background-image: url('../../assets/pexels-pixabay-69825.jpg');
+  background-size: cover; /* Scales the image to cover the entire element */
+  background-repeat: no-repeat; /* Prevents the image from repeating */
+  background-position: center; /* Centers the image */
+
+}
+.slide3 {
+  font-size: 18px;
+  display: flex;
+  flex-direction: column;
+  height: 500px;
+  background-color: black;
+  color: black;
+  background-image: url('../../assets/pexels-jeremy-bishop-1260133-26455238.jpg');
+  background-size: cover; /* Scales the image to cover the entire element */
+  background-repeat: no-repeat; /* Prevents the image from repeating */
+  background-position: center; /* Centers the image */
+
+
+}
+.slide4 {
+  font-size: 18px;
+  display: flex;
+  flex-direction: column;
+  height: 500px;
+  background-color: black;
+  color: black;
+  background-image: url('../../assets/1.jpg');
+  background-size: cover; /* Scales the image to cover the entire element */
+  background-repeat: no-repeat; /* Prevents the image from repeating */
+  background-position: center; /* Centers the image */
+
+
+}
+.slide5 {
+  font-size: 18px;
+  display: flex;
+  flex-direction: column;
+  height: 500px;
+  background-color: black;
+  color: black;
+  background-image: url('../../assets/pexels-joshsorenson-391522.jpg');
+  background-size: cover; /* Scales the image to cover the entire element */
+  background-repeat: no-repeat; /* Prevents the image from repeating */
+  background-position: center; /* Centers the image */
+
+
+}
+
+
+@media (max-width: 563px) {
+  .texttt{
+    font-size: 30px;
+    text-wrap:pretty;
+  }
+  .re{
+    font-size: 16px;
+    text-wrap:pretty;
+
+  }
+  .re2{
+    font-size: 13px;
+    text-wrap:pretty;
+
+  }
+  .res{
+    font-size: 13px;
+    text-wrap:pretty;
+    display: flex;
+    flex-direction: row;
+
+  }
+  .slide1, .slide2, .slide3, .slide4, .slide5 {
+    padding-left: 40px;
+  }
+}
+.cvv {
+  box-shadow: 0px 0px 70px 24px rgba(6,78,59,0.75);
+
+}
+.cvv:hover {
+  box-shadow: 0px 0px 59px 5px rgba(129,129,129)
+}

@@ -1,0 +1,65 @@
+
+<mat-sidenav-container class="sidenav-container w-screen">
+  <!-- Sidebar -->
+  <mat-sidenav #sidenav mode="side" class="sidenav" [opened]="false" (matSidenavClosed)="menuOpen = false">
+    <button mat-icon-button (click)="sidenav.close()" class="close-button">
+      <mat-icon>close</mat-icon>
+    </button>
+    <ul class="nav1 text-3xl gap-3">
+      <li>
+        <a routerLink="/home" routerLinkActive="active" (click)="sidenav.close()">Home</a>
+      </li>
+      <li>
+        <a routerLink="/portfolio" routerLinkActive="active" (click)="sidenav.close()">Portfolio</a>
+      </li>
+      <li>
+        <a routerLink="/gallery" routerLinkActive="active" (click)="sidenav.close()">Gallery</a>
+      </li>
+      <li>
+        <a routerLink="/skills" routerLinkActive="active" (click)="sidenav.close()">Skills</a>
+      </li>
+    </ul>
+  </mat-sidenav>
+
+  <!-- Main content -->
+  <mat-sidenav-content>
+    <div class="navbar-container bg-gradient-to-l from-neutral-700 to-black p-4 flex justify-between items-center z-10">
+      <!-- Hamburger Menu for Mobile -->
+      <button mat-icon-button (click)="sidenav.toggle()" class="md:hidden cxx">
+        <mat-icon>menu</mat-icon>
+      </button>
+
+      <!-- Desktop Menu -->
+      <div class="hidden md:flex md:items-center md:space-x-4">
+        <ul class="nav md:flex md:space-x-4">
+          <li>
+            <a routerLink="/home" routerLinkActive="active" class="block hover:text-emerald-400 duration-500">Home</a>
+          </li>
+          <li>
+            <a routerLink="/portfolio" routerLinkActive="active" class="block hover:text-emerald-400 duration-500">Portfolio</a>
+          </li>
+          <li>
+            <a routerLink="/gallery" routerLinkActive="active" class="block hover:text-emerald-400 duration-500">Gallery</a>
+          </li>
+          <li>
+            <a routerLink="/skills" routerLinkActive="active" class="block hover:text-emerald-400 duration-500">Skills</a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Contact Button -->
+      <div class="flex items-center">
+        <button
+          class="bg-emerald-800 hover:bg-slate-500 text-white font-bold py-2 px-4 rounded duration-500 cvv"
+          (click)="openContactForm()">
+          Contact
+        </button>
+      </div>
+    </div>
+
+    <!-- Main content area -->
+    <div>
+      <router-outlet></router-outlet>
+    </div>
+  </mat-sidenav-content>
+</mat-sidenav-container>

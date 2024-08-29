@@ -1,0 +1,29 @@
+.navbar-container {
+  overflow: hidden; /* Ensure no overflow */
+}
+
+.navbar-container ul {
+  display: flex;
+  flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+}
+
+.navbar-container button {
+  white-space: nowrap; /* Prevent button text from wrapping */
+}
+
+/* Ensure padding and margins are appropriate */
+.navbar-container .flex {
+  padding: 0.5rem 1rem;
+}
+
+@media (max-width: 442px) {
+  .navbar-container ul {
+    flex-direction: column; /* Stack items vertically on smaller screens */
+    space-y-2: 0.5rem; /* Add spacing between items */
+  }
+
+  .navbar-container .flex {
+    flex-direction: column; /* Stack the whole navbar vertically */
+    align-items: center;
+  }
+}

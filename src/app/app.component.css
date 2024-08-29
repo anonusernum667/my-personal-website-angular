@@ -1,0 +1,41 @@
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+body, html {
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+.main-container {
+  width: 100%;
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+.footer {
+  color: gray !important;
+}
+.nav ul {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center ;
+}
+div {
+  transition: all 300ms ease-in-out;
+  /* Optional: Add filter effects if desired */
+  filter: blur(0px);
+}
+
+div.melting {
+  filter: blur(5px);
+}

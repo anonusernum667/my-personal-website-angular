@@ -1,0 +1,52 @@
+<div
+  class="w-full min-h-screen bg-gradient-to-r from-neutral-800 via-emerald-950 to-neutral-800 text-white p-4 sm:p-6 md:p-8 lg:p-12"
+  data-aos="fade-right" data-aos-duration="500"
+>
+  <div class="max-w-screen-lg mx-auto px-2 sm:px-4 md:px-6">
+    <div class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl flex justify-center mb-6">
+      <h2 class="font-bold">Tech Skills</h2>
+    </div>
+
+    <!-- Frontend Development Section -->
+    <section class="mb-8">
+      <h3 class="text-lg sm:text-xl md:text-2xl font-semibold text-center mb-4">Frontend Development</h3>
+      <ul class="flex flex-wrap justify-start gap-3 sm:gap-4">
+        <li
+          *ngFor="let skill of Techskills.frontend | shuffleobjects"
+          class="transition-transform transform hover:translate-x-1 hover:translate-y-1 flex gap-2 items-center border border-neutral-200 rounded-full px-3 py-1.5 text-xs sm:text-sm md:text-base"
+        >
+          <div class="w-3 h-3 rounded-full" [ngClass]="colors.color | sh"></div>
+          {{ skill }}
+        </li>
+      </ul>
+    </section>
+
+    <!-- General Programming Section -->
+    <section class="mb-8">
+      <h3 class="text-lg sm:text-xl md:text-2xl font-semibold text-center mb-4">General Programming</h3>
+      <ul class="flex flex-wrap justify-start gap-3 sm:gap-4">
+        <li
+          *ngFor="let skill of Techskills.programming"
+          class="transition-transform transform hover:translate-x-1 hover:translate-y-1 flex gap-2 items-center border border-neutral-200 rounded-full px-3 py-1.5 text-xs sm:text-sm md:text-base"
+        >
+          <div class="w-3 h-3 rounded-full" [ngClass]="colors.color | sh"></div>
+          {{ skill }}
+        </li>
+      </ul>
+    </section>
+
+    <!-- System Tools Section -->
+    <section class="mb-8">
+      <h3 class="text-lg sm:text-xl md:text-2xl font-semibold text-center mb-4">System Tools</h3>
+      <ul class="flex flex-wrap justify-start gap-3 sm:gap-4">
+        <li
+          *ngFor="let skill of Techskills.systemTools"
+          class="transition-transform transform hover:translate-x-1 hover:translate-y-1 flex gap-2 items-center border border-neutral-200 rounded-full px-3 py-1.5 text-xs sm:text-sm md:text-base"
+        >
+          <div class="w-3 h-3 rounded-full" [ngClass]="colors.color | sh"></div>
+          {{ skill }}
+        </li>
+      </ul>
+    </section>
+  </div>
+</div>

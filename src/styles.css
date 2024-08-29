@@ -1,1 +1,37 @@
-/* You can add global styles to this file, and also import other style files */
+/* @tailwind base;
+@tailwind components;
+@tailwind utilities; */
+
+@import "tailwindcss/base";
+@import "tailwindcss/utilities";
+@import "tailwindcss/components";
+
+
+@font-face {
+  font-family: f1;
+  src: url('../src/assets/formular-light-trial.otf');
+}
+/* styles.css */
+:root {
+  --Black: #0d0d0d;
+  --Blue: #172845;
+  --Purble: #9f00ff;
+  --white: #FCFBF4;
+  --Grey: #8c92ac;
+  color: var(--white);
+  color: black;
+  background-color: #565656;
+}
+
+* {
+  font-family: f1 !important;
+  font-size: 20px;
+  font-family: f1;
+
+}
+html, body { height: 100%;
+width: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

@@ -1,0 +1,54 @@
+<div class="bg-gradient-to-l from-emerald-950 to bg-black text-white" data-aos="fade-right" data-aos-duration="500">
+  <section id="portfolio" class="portfolio-section py-16">
+    <div class="container mx-auto">
+      <div class="text-center mb-12">
+        <h2 class="text-4xl font-bold mb-4 xc">Portfolio Showcase</h2>
+        <p class=" xc text-lg text-neutral-400 font-semibold">
+          Discover my latest projects on my <a href="https://github.com/anonusernum667" class="text-emerald-700">GitHub</a>
+        </p>
+      </div>
+
+      <section class=" dark:bg-gray-900 antialiased bg-gradient-to-l from-emerald-950 to-neutral-950 w-full">
+        <div class="max-w-screen-xl px-4 py-8 mx-auto lg:px-6 sm:py-16 lg:py-24">
+
+
+          <div data-aos="fade-up" class="grid grid-cols-1 mt-0 text-center sm:mt-16 gap-x-20 gap-y-12 sm:grid-cols-2 lg:grid-cols-3  ">
+            <div data-aos="fade-down" class="space-y-4 shadow-sm shadow-neutral-400 rounded-md py-3 bg-gradient-to-r from-emerald-800 to-neutral-900" *ngFor="let project of projects | shuffleobjects">
+              <span
+                class="inline-flex items-center w-full">
+              <img [src]="project.imgurl" alt="img">
+              </span>
+              <h3 class="text-2xl font-bold leading-tight text-white">
+                {{project.name}}
+              </h3>
+              <p class="text-lg font-normal text-gray-500 dark:text-gray-400">
+                {{project.description}}
+              </p>
+              <div>
+                <a href="{{project.repoLink}}" title=""
+                class="w-11/12 text-white bg-gradient-to-l from-emerald-900 to-neutral-900 justify-center hover:bg-neutral-800 inline-flex items-center  focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800"
+                role="button">
+                View Repositery
+
+              </a>
+
+                <a *ngIf="project.liveLink" href="{{project.liveLink}}" title=""
+                class="w-11/12 mt-2 text-white bg-gradient-to-l from-emerald-900 to-neutral-900 justify-center hover:bg-neutral-800 inline-flex items-center  focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800"
+                role="button">
+                View live
+
+              </a>
+
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+
+
+    </div>
+  </section>
+</div>
