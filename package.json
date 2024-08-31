@@ -27,6 +27,7 @@
     "@angular/ssr": "^18.0.6",
     "@emailjs/browser": "^4.3.3",
     "@sweetalert2/ngx-sweetalert2": "^12.4.0",
+    "angular-cli-ghpages": "^2.0.1",
     "aos": "^2.3.4",
     "bootstrap": "^5.3.3",
     "emailjs": "^4.0.3",
